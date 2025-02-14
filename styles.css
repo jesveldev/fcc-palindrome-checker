@@ -1,0 +1,98 @@
+body{
+	background-color: #0a0a23;
+	color:white;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items:center;
+	min-height:90vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+	width: 100%;
+	text-align:center;
+}
+
+#img-container{
+	width:30%;
+	margin: 1% auto;
+}
+
+#logo{
+	width:50%;
+}
+
+main,form{
+	width:100%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items:center;
+}
+
+form{
+	flex-flow: row nowrap;
+	background-color:white;
+	width:27.5%;
+	padding:3% 1%;
+	border-radius: 10px;
+	box-shadow: 0px 5px 5px blue;
+}
+
+input[type='text']{
+	font-size:1.1em;
+	padding:0.5% 1%;
+	background-color:transparent;
+	border:none;
+	border-bottom: 2px solid #5A01A7;
+}
+
+#result{
+	font-size:1.5em;
+}
+
+#check-btn{
+	background-color:#5A01A7;
+	border-radius: 15px;
+	border:none;
+	color:white;
+	font-size:1em;
+	padding:2.5% 3.5%;
+	margin-left: 5%;
+
+	cursor:pointer;
+}
+
+#check-btn:active{
+	background-color: #310078;
+}
+
+#advice{
+	display: block;
+	width: 25%;
+	padding:0.25% 2%;
+	background-color: #00471B;
+	border-radius: 10px;
+	text-align: center;
+}
+
+#advice p{
+	display: block;
+	color:white;
+	font-size: 1.35em;
+}
+
+
+
+@media screen and (max-width:767px){
+	#advice,form,#img-container{
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width:1000px){
+	#advice,form,#img-container{
+		width: 60%;
+	}
+}
