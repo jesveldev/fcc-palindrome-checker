@@ -1,6 +1,5 @@
 "use strict";
 
-
 document.querySelector("#check-btn").addEventListener("click",(e)=>{
 	e.preventDefault();
 
